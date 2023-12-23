@@ -1,0 +1,52 @@
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'sidebar content';
+    gap: 10px;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 90px 1fr;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('https://img.badfon.ru/wallpaper/big/3/8d/my-little-pony-poni-personazhi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text {
+    background-color: white
+}
+
+
+.header{
+    grid-area: header;
+    padding: 5px 5px 5px 20px;
+}
+
+.sidebar{
+    display: flex;
+    grid-area: sidebar;
+}
+
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pic{
+    height: 400px;
+}
+
+.commentContainer {
+    padding: 16px;
+    margin: 20px;
+}
+
+.comment {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
